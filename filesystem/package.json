@@ -1,0 +1,17 @@
+{
+  "name": "filesystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "watcher-argv.js",
+  "scripts": {
+    "watcher": "tsc && node dist/watcher.js target.txt",
+    "reader": "tsc && node dist/reader.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.7.1"
+  }
+}
