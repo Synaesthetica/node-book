@@ -2,7 +2,7 @@ import { EventEmitter } from "events";
 import { Stream } from "stream";
 
 class LDJClient extends EventEmitter {
-    constructor(stream: Stream) {
+    constructor(stream: EventEmitter) {
         super();
         let buffer = '';
         stream.on('data', data => {
@@ -16,7 +16,7 @@ class LDJClient extends EventEmitter {
             }
         });
     }
-    static connect(stream: Stream) {
+    static connect(stream: EventEmitter) {
         return new LDJClient(stream);
     }
 }

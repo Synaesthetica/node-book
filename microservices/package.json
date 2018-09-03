@@ -4,7 +4,6 @@
   "description": "",
   "main": "watcher-argv.js",
   "scripts": {
-    "net-watcher": "tsc && node dist/net-watcher.js target.txt",
     "test": "tsc && mocha dist/test"
   },
   "keywords": [],
